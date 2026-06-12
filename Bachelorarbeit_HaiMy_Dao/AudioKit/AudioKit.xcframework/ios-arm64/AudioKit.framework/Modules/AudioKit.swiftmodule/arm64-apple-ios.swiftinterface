@@ -1,0 +1,168 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios26.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AudioKit
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import Combine
+import Darwin
+import Dispatch
+import Foundation
+import Speech
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_Concurrency.MainActor final public class AudioKitFacade : Foundation.ObservableObject {
+  @_Concurrency.MainActor public static let shared: AudioKit.AudioKitFacade
+  @_Concurrency.MainActor final public let service: AudioKit.KontaktberichtAudioService
+  @Combine.Published @_projectedValueProperty($transcript) @_Concurrency.MainActor final public var transcript: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor final public var $transcript: Combine.Published<Swift.String>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isRecording) @_Concurrency.MainActor final public var isRecording: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isRecording: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isSpeaking) @_Concurrency.MainActor final public var isSpeaking: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isSpeaking: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isAuthorized) @_Concurrency.MainActor final public var isAuthorized: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isAuthorized: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Combine.Published @_projectedValueProperty($activeMic) @_Concurrency.MainActor final public var activeMic: AudioKit.MicTarget? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var $activeMic: Combine.Published<AudioKit.MicTarget?>.Publisher {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Combine.Published @_projectedValueProperty($lastError) @_Concurrency.MainActor final public var lastError: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var $lastError: Combine.Published<Swift.String?>.Publisher {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public init(service: AudioKit.KontaktberichtAudioService? = nil)
+  #endif
+  @_Concurrency.MainActor final public func requestPermissions() async -> Swift.Bool
+  @_Concurrency.MainActor final public func toggleFreeTextMic()
+  @_Concurrency.MainActor final public func toggleFollowupMic()
+  @_Concurrency.MainActor final public func stopAll()
+  @_Concurrency.MainActor final public func speak(_ text: Swift.String)
+  @_Concurrency.MainActor final public func stopSpeak()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func speakPendingQuestionAuto(question: Swift.String?, auto: Swift.Bool = true)
+  #endif
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_free")
+public func ak_free(_ ptr: Swift.UnsafeMutablePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_request_permissions_json")
+public func ak_request_permissions_json() -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_toggle_mic_json")
+public func ak_toggle_mic_json(_ input: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_stop_stt_json")
+public func ak_stop_stt_json() -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_speak_json")
+public func ak_speak_json(_ input: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_stop_speak_json")
+public func ak_stop_speak_json() -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ak_get_state_json")
+public func ak_get_state_json() -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class AudioSTT : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @_Concurrency.MainActor final public func requestPermissions() async
+  @_Concurrency.MainActor final public func start()
+  @_Concurrency.MainActor final public func stop()
+  @_Concurrency.MainActor final public func resetTranscript()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AudioTTS : ObjectiveC.NSObject, Combine.ObservableObject, AVFAudio.AVSpeechSynthesizerDelegate {
+  final public func stop()
+  @objc final public func speechSynthesizer(_ s: AVFAudio.AVSpeechSynthesizer, didStart _: AVFAudio.AVSpeechUtterance)
+  @objc final public func speechSynthesizer(_ s: AVFAudio.AVSpeechSynthesizer, didFinish _: AVFAudio.AVSpeechUtterance)
+  @objc final public func speechSynthesizer(_ s: AVFAudio.AVSpeechSynthesizer, didCancel _: AVFAudio.AVSpeechUtterance)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum MicTarget {
+  case freeText, followup
+  public static func == (a: AudioKit.MicTarget, b: AudioKit.MicTarget) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol KontaktberichtAudioServiceProtocol {
+  var stt: AudioKit.AudioSTT { get }
+  var tts: AudioKit.AudioTTS { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var activeMic: AudioKit.MicTarget? { get }
+  #endif
+  func toggleFreeTextMic()
+  func toggleFollowupMic()
+  func handleTranscriptChange(_ newValue: Swift.String, onFreeText: (Swift.String) -> Swift.Void, onFollowup: (Swift.String) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func handlePendingQuestionChanged(ttsAutoSpeak: Swift.Bool, question: Swift.String?)
+  #endif
+  func handleTtsSpeakingChanged(onResumeMic: (AudioKit.MicTarget) -> Swift.Void)
+}
+@_Concurrency.MainActor final public class KontaktberichtAudioService : AudioKit.KontaktberichtAudioServiceProtocol {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public var stt: AudioKit.AudioSTT {
+    get
+  }
+  @_Concurrency.MainActor final public var tts: AudioKit.AudioTTS {
+    get
+  }
+  @_Concurrency.MainActor final public var activeMic: AudioKit.MicTarget? {
+    get
+  }
+  @_Concurrency.MainActor final public func toggleFreeTextMic()
+  @_Concurrency.MainActor final public func toggleFollowupMic()
+  @_Concurrency.MainActor final public func handleTranscriptChange(_ newValue: Swift.String, onFreeText: (Swift.String) -> Swift.Void, onFollowup: (Swift.String) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func handlePendingQuestionChanged(ttsAutoSpeak: Swift.Bool, question: Swift.String?)
+  #endif
+  @_Concurrency.MainActor final public func handleTtsSpeakingChanged(onResumeMic: (AudioKit.MicTarget) -> Swift.Void)
+  @_Concurrency.MainActor final public func stopAll()
+  @objc deinit
+}
+extension AudioKit.AudioKitFacade : Swift.Sendable {}
+extension AudioKit.AudioSTT : Swift.Sendable {}
+extension AudioKit.MicTarget : Swift.Equatable {}
+extension AudioKit.MicTarget : Swift.Hashable {}
+extension AudioKit.KontaktberichtAudioService : Swift.Sendable {}

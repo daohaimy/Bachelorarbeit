@@ -1,0 +1,3032 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AudioKit",
+    "printedName": "AudioKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioKitFacade",
+        "printedName": "AudioKitFacade",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioKitFacade",
+                "printedName": "AudioKit.AudioKitFacade",
+                "usr": "s:8AudioKit0aB6FacadeC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC6sharedACvpZ",
+            "mangledName": "$s8AudioKit0aB6FacadeC6sharedACvpZ",
+            "moduleName": "AudioKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioKitFacade",
+                    "printedName": "AudioKit.AudioKitFacade",
+                    "usr": "s:8AudioKit0aB6FacadeC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC6sharedACvgZ",
+                "mangledName": "$s8AudioKit0aB6FacadeC6sharedACvgZ",
+                "moduleName": "AudioKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "service",
+            "printedName": "service",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KontaktberichtAudioService",
+                "printedName": "AudioKit.KontaktberichtAudioService",
+                "usr": "s:8AudioKit014KontaktberichtA7ServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC7serviceAA014KontaktberichtA7ServiceCvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC7serviceAA014KontaktberichtA7ServiceCvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KontaktberichtAudioService",
+                    "printedName": "AudioKit.KontaktberichtAudioService",
+                    "usr": "s:8AudioKit014KontaktberichtA7ServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC7serviceAA014KontaktberichtA7ServiceCvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC7serviceAA014KontaktberichtA7ServiceCvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transcript",
+            "printedName": "transcript",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC10transcriptSSvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC10transcriptSSvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC10transcriptSSvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC10transcriptSSvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$transcript",
+            "printedName": "$transcript",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.String>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC11$transcript7Combine9PublishedV9PublisherVySS_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC11$transcript7Combine9PublishedV9PublisherVySS_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.String>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC11$transcript7Combine9PublishedV9PublisherVySS_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC11$transcript7Combine9PublishedV9PublisherVySS_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRecording",
+            "printedName": "isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC11isRecordingSbvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC11isRecordingSbvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC11isRecordingSbvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC11isRecordingSbvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isRecording",
+            "printedName": "$isRecording",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC12$isRecording7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC12$isRecording7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC12$isRecording7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC12$isRecording7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSpeaking",
+            "printedName": "isSpeaking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC10isSpeakingSbvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC10isSpeakingSbvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC10isSpeakingSbvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC10isSpeakingSbvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isSpeaking",
+            "printedName": "$isSpeaking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC11$isSpeaking7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC11$isSpeaking7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC11$isSpeaking7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC11$isSpeaking7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAuthorized",
+            "printedName": "isAuthorized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC12isAuthorizedSbvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC12isAuthorizedSbvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC12isAuthorizedSbvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC12isAuthorizedSbvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isAuthorized",
+            "printedName": "$isAuthorized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC13$isAuthorized7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC13$isAuthorized7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC13$isAuthorized7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC13$isAuthorized7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeMic",
+            "printedName": "activeMic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AudioKit.MicTarget?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC9activeMicAA0E6TargetOSgvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC9activeMicAA0E6TargetOSgvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AudioKit.MicTarget?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MicTarget",
+                        "printedName": "AudioKit.MicTarget",
+                        "usr": "s:8AudioKit9MicTargetO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC9activeMicAA0E6TargetOSgvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC9activeMicAA0E6TargetOSgvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$activeMic",
+            "printedName": "$activeMic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<AudioKit.MicTarget>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC10$activeMic7Combine9PublishedV9PublisherVyAA0E6TargetOSg_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC10$activeMic7Combine9PublishedV9PublisherVyAA0E6TargetOSg_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<AudioKit.MicTarget>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC10$activeMic7Combine9PublishedV9PublisherVyAA0E6TargetOSg_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC10$activeMic7Combine9PublishedV9PublisherVyAA0E6TargetOSg_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastError",
+            "printedName": "lastError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC9lastErrorSSSgvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC9lastErrorSSSgvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC9lastErrorSSSgvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC9lastErrorSSSgvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$lastError",
+            "printedName": "$lastError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit0aB6FacadeC10$lastError7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "mangledName": "$s8AudioKit0aB6FacadeC10$lastError7Combine9PublishedV9PublisherVySSSg_Gvp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Swift.String>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit0aB6FacadeC10$lastError7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "mangledName": "$s8AudioKit0aB6FacadeC10$lastError7Combine9PublishedV9PublisherVySSSg_Gvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioKitFacade",
+                "printedName": "AudioKit.AudioKitFacade",
+                "usr": "s:8AudioKit0aB6FacadeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AudioKit.KontaktberichtAudioService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KontaktberichtAudioService",
+                    "printedName": "AudioKit.KontaktberichtAudioService",
+                    "usr": "s:8AudioKit014KontaktberichtA7ServiceC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AudioKit0aB6FacadeC7serviceAcA014KontaktberichtA7ServiceCSg_tcfc",
+            "mangledName": "$s8AudioKit0aB6FacadeC7serviceAcA014KontaktberichtA7ServiceCSg_tcfc",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC18requestPermissionsSbyYaF",
+            "mangledName": "$s8AudioKit0aB6FacadeC18requestPermissionsSbyYaF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFreeTextMic",
+            "printedName": "toggleFreeTextMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC17toggleFreeTextMicyyF",
+            "mangledName": "$s8AudioKit0aB6FacadeC17toggleFreeTextMicyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFollowupMic",
+            "printedName": "toggleFollowupMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC17toggleFollowupMicyyF",
+            "mangledName": "$s8AudioKit0aB6FacadeC17toggleFollowupMicyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAll",
+            "printedName": "stopAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC7stopAllyyF",
+            "mangledName": "$s8AudioKit0aB6FacadeC7stopAllyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "speak",
+            "printedName": "speak(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC5speakyySSF",
+            "mangledName": "$s8AudioKit0aB6FacadeC5speakyySSF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopSpeak",
+            "printedName": "stopSpeak()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC9stopSpeakyyF",
+            "mangledName": "$s8AudioKit0aB6FacadeC9stopSpeakyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "speakPendingQuestionAuto",
+            "printedName": "speakPendingQuestionAuto(question:auto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0aB6FacadeC24speakPendingQuestionAuto8question4autoySSSg_SbtF",
+            "mangledName": "$s8AudioKit0aB6FacadeC24speakPendingQuestionAuto8question4autoySSSg_SbtF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8AudioKit0aB6FacadeC",
+        "mangledName": "$s8AudioKit0aB6FacadeC",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Dispatch",
+        "printedName": "Dispatch",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_free",
+        "printedName": "ak_free(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_free:",
+        "mangledName": "$s8AudioKit7ak_freeyySpys4Int8VGSgF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_request_permissions_json",
+        "printedName": "ak_request_permissions_json()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_request_permissions_json",
+        "mangledName": "$s8AudioKit27ak_request_permissions_jsonSpys4Int8VGSgyF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_toggle_mic_json",
+        "printedName": "ak_toggle_mic_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_toggle_mic_json:",
+        "mangledName": "$s8AudioKit18ak_toggle_mic_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_stop_stt_json",
+        "printedName": "ak_stop_stt_json()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_stop_stt_json",
+        "mangledName": "$s8AudioKit16ak_stop_stt_jsonSpys4Int8VGSgyF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_speak_json",
+        "printedName": "ak_speak_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_speak_json:",
+        "mangledName": "$s8AudioKit13ak_speak_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_stop_speak_json",
+        "printedName": "ak_stop_speak_json()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_stop_speak_json",
+        "mangledName": "$s8AudioKit18ak_stop_speak_jsonSpys4Int8VGSgyF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ak_get_state_json",
+        "printedName": "ak_get_state_json()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ak_get_state_json",
+        "mangledName": "$s8AudioKit17ak_get_state_jsonSpys4Int8VGSgyF",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Speech",
+        "printedName": "Speech",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioSTT",
+        "printedName": "AudioSTT",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "requestPermissions",
+            "printedName": "requestPermissions()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0A3STTC18requestPermissionsyyYaF",
+            "mangledName": "$s8AudioKit0A3STTC18requestPermissionsyyYaF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0A3STTC5startyyF",
+            "mangledName": "$s8AudioKit0A3STTC5startyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0A3STTC4stopyyF",
+            "mangledName": "$s8AudioKit0A3STTC4stopyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetTranscript",
+            "printedName": "resetTranscript()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0A3STTC15resetTranscriptyyF",
+            "mangledName": "$s8AudioKit0A3STTC15resetTranscriptyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioSTT",
+                "printedName": "AudioKit.AudioSTT",
+                "usr": "c:@M@AudioKit@objc(cs)AudioSTT"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AudioKit@objc(cs)AudioSTT(im)init",
+            "mangledName": "$s8AudioKit0A3STTCACycfc",
+            "moduleName": "AudioKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AudioKit@objc(cs)AudioSTT",
+        "mangledName": "$s8AudioKit0A3STTC",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AudioKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioTTS",
+        "printedName": "AudioTTS",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit0A3TTSC4stopyyF",
+            "mangledName": "$s8AudioKit0A3TTSC4stopyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "speechSynthesizer",
+            "printedName": "speechSynthesizer(_:didStart:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechSynthesizer",
+                "printedName": "AVFAudio.AVSpeechSynthesizer",
+                "usr": "c:objc(cs)AVSpeechSynthesizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechUtterance",
+                "printedName": "AVFAudio.AVSpeechUtterance",
+                "usr": "c:objc(cs)AVSpeechUtterance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AudioKit@objc(cs)AudioTTS(im)speechSynthesizer:didStartSpeechUtterance:",
+            "mangledName": "$s8AudioKit0A3TTSC17speechSynthesizer_8didStartySo08AVSpeechE0C_So0H9UtteranceCtF",
+            "moduleName": "AudioKit",
+            "objc_name": "speechSynthesizer:didStartSpeechUtterance:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "speechSynthesizer",
+            "printedName": "speechSynthesizer(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechSynthesizer",
+                "printedName": "AVFAudio.AVSpeechSynthesizer",
+                "usr": "c:objc(cs)AVSpeechSynthesizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechUtterance",
+                "printedName": "AVFAudio.AVSpeechUtterance",
+                "usr": "c:objc(cs)AVSpeechUtterance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AudioKit@objc(cs)AudioTTS(im)speechSynthesizer:didFinishSpeechUtterance:",
+            "mangledName": "$s8AudioKit0A3TTSC17speechSynthesizer_9didFinishySo08AVSpeechE0C_So0H9UtteranceCtF",
+            "moduleName": "AudioKit",
+            "objc_name": "speechSynthesizer:didFinishSpeechUtterance:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "speechSynthesizer",
+            "printedName": "speechSynthesizer(_:didCancel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechSynthesizer",
+                "printedName": "AVFAudio.AVSpeechSynthesizer",
+                "usr": "c:objc(cs)AVSpeechSynthesizer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVSpeechUtterance",
+                "printedName": "AVFAudio.AVSpeechUtterance",
+                "usr": "c:objc(cs)AVSpeechUtterance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AudioKit@objc(cs)AudioTTS(im)speechSynthesizer:didCancelSpeechUtterance:",
+            "mangledName": "$s8AudioKit0A3TTSC17speechSynthesizer_9didCancelySo08AVSpeechE0C_So0H9UtteranceCtF",
+            "moduleName": "AudioKit",
+            "objc_name": "speechSynthesizer:didCancelSpeechUtterance:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AudioKit@objc(cs)AudioTTS",
+        "mangledName": "$s8AudioKit0A3TTSC",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicTarget",
+        "printedName": "MicTarget",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "freeText",
+            "printedName": "freeText",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AudioKit.MicTarget.Type) -> AudioKit.MicTarget",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AudioKit.MicTarget.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MicTarget",
+                        "printedName": "AudioKit.MicTarget",
+                        "usr": "s:8AudioKit9MicTargetO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AudioKit9MicTargetO8freeTextyA2CmF",
+            "mangledName": "$s8AudioKit9MicTargetO8freeTextyA2CmF",
+            "moduleName": "AudioKit"
+          },
+          {
+            "kind": "Var",
+            "name": "followup",
+            "printedName": "followup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AudioKit.MicTarget.Type) -> AudioKit.MicTarget",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AudioKit.MicTarget.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MicTarget",
+                        "printedName": "AudioKit.MicTarget",
+                        "usr": "s:8AudioKit9MicTargetO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8AudioKit9MicTargetO8followupyA2CmF",
+            "mangledName": "$s8AudioKit9MicTargetO8followupyA2CmF",
+            "moduleName": "AudioKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicTarget",
+                "printedName": "AudioKit.MicTarget",
+                "usr": "s:8AudioKit9MicTargetO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicTarget",
+                "printedName": "AudioKit.MicTarget",
+                "usr": "s:8AudioKit9MicTargetO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit9MicTargetO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8AudioKit9MicTargetO2eeoiySbAC_ACtFZ",
+            "moduleName": "AudioKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit9MicTargetO9hashValueSivp",
+            "mangledName": "$s8AudioKit9MicTargetO9hashValueSivp",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit9MicTargetO9hashValueSivg",
+                "mangledName": "$s8AudioKit9MicTargetO9hashValueSivg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit9MicTargetO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8AudioKit9MicTargetO4hash4intoys6HasherVz_tF",
+            "moduleName": "AudioKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8AudioKit9MicTargetO",
+        "mangledName": "$s8AudioKit9MicTargetO",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KontaktberichtAudioServiceProtocol",
+        "printedName": "KontaktberichtAudioServiceProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "stt",
+            "printedName": "stt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioSTT",
+                "printedName": "AudioKit.AudioSTT",
+                "usr": "c:@M@AudioKit@objc(cs)AudioSTT"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP3sttAA0A3STTCvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP3sttAA0A3STTCvp",
+            "moduleName": "AudioKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioSTT",
+                    "printedName": "AudioKit.AudioSTT",
+                    "usr": "c:@M@AudioKit@objc(cs)AudioSTT"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP3sttAA0A3STTCvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP3sttAA0A3STTCvg",
+                "moduleName": "AudioKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tts",
+            "printedName": "tts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioTTS",
+                "printedName": "AudioKit.AudioTTS",
+                "usr": "c:@M@AudioKit@objc(cs)AudioTTS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP3ttsAA0A3TTSCvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP3ttsAA0A3TTSCvp",
+            "moduleName": "AudioKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioTTS",
+                    "printedName": "AudioKit.AudioTTS",
+                    "usr": "c:@M@AudioKit@objc(cs)AudioTTS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP3ttsAA0A3TTSCvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP3ttsAA0A3TTSCvg",
+                "moduleName": "AudioKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeMic",
+            "printedName": "activeMic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AudioKit.MicTarget?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP9activeMicAA0G6TargetOSgvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP9activeMicAA0G6TargetOSgvp",
+            "moduleName": "AudioKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AudioKit.MicTarget?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MicTarget",
+                        "printedName": "AudioKit.MicTarget",
+                        "usr": "s:8AudioKit9MicTargetO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP9activeMicAA0G6TargetOSgvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP9activeMicAA0G6TargetOSgvg",
+                "moduleName": "AudioKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFreeTextMic",
+            "printedName": "toggleFreeTextMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP17toggleFreeTextMicyyF",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP17toggleFreeTextMicyyF",
+            "moduleName": "AudioKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFollowupMic",
+            "printedName": "toggleFollowupMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP17toggleFollowupMicyyF",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP17toggleFollowupMicyyF",
+            "moduleName": "AudioKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleTranscriptChange",
+            "printedName": "handleTranscriptChange(_:onFreeText:onFollowup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP22handleTranscriptChange_10onFreeText0I8FollowupySS_ySSXEySSXEtF",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP22handleTranscriptChange_10onFreeText0I8FollowupySS_ySSXEySSXEtF",
+            "moduleName": "AudioKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handlePendingQuestionChanged",
+            "printedName": "handlePendingQuestionChanged(ttsAutoSpeak:question:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP28handlePendingQuestionChanged12ttsAutoSpeak8questionySb_SSSgtF",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP28handlePendingQuestionChanged12ttsAutoSpeak8questionySb_SSSgtF",
+            "moduleName": "AudioKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleTtsSpeakingChanged",
+            "printedName": "handleTtsSpeakingChanged(onResumeMic:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AudioKit.MicTarget) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP24handleTtsSpeakingChanged11onResumeMicyyAA0L6TargetOXE_tF",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP24handleTtsSpeakingChanged11onResumeMicyyAA0L6TargetOXE_tF",
+            "moduleName": "AudioKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : AudioKit.KontaktberichtAudioServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP",
+        "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KontaktberichtAudioService",
+        "printedName": "KontaktberichtAudioService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KontaktberichtAudioService",
+                "printedName": "AudioKit.KontaktberichtAudioService",
+                "usr": "s:8AudioKit014KontaktberichtA7ServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceCACycfc",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceCACycfc",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "stt",
+            "printedName": "stt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioSTT",
+                "printedName": "AudioKit.AudioSTT",
+                "usr": "c:@M@AudioKit@objc(cs)AudioSTT"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC3sttAA0A3STTCvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC3sttAA0A3STTCvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioSTT",
+                    "printedName": "AudioKit.AudioSTT",
+                    "usr": "c:@M@AudioKit@objc(cs)AudioSTT"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA7ServiceC3sttAA0A3STTCvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC3sttAA0A3STTCvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tts",
+            "printedName": "tts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioTTS",
+                "printedName": "AudioKit.AudioTTS",
+                "usr": "c:@M@AudioKit@objc(cs)AudioTTS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC3ttsAA0A3TTSCvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC3ttsAA0A3TTSCvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioTTS",
+                    "printedName": "AudioKit.AudioTTS",
+                    "usr": "c:@M@AudioKit@objc(cs)AudioTTS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA7ServiceC3ttsAA0A3TTSCvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC3ttsAA0A3TTSCvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activeMic",
+            "printedName": "activeMic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AudioKit.MicTarget?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC9activeMicAA0F6TargetOSgvp",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC9activeMicAA0F6TargetOSgvp",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AudioKit.MicTarget?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MicTarget",
+                        "printedName": "AudioKit.MicTarget",
+                        "usr": "s:8AudioKit9MicTargetO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8AudioKit014KontaktberichtA7ServiceC9activeMicAA0F6TargetOSgvg",
+                "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC9activeMicAA0F6TargetOSgvg",
+                "moduleName": "AudioKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFreeTextMic",
+            "printedName": "toggleFreeTextMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC17toggleFreeTextMicyyF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC17toggleFreeTextMicyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFollowupMic",
+            "printedName": "toggleFollowupMic()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC17toggleFollowupMicyyF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC17toggleFollowupMicyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleTranscriptChange",
+            "printedName": "handleTranscriptChange(_:onFreeText:onFollowup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC22handleTranscriptChange_10onFreeText0H8FollowupySS_ySSXEySSXEtF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC22handleTranscriptChange_10onFreeText0H8FollowupySS_ySSXEySSXEtF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handlePendingQuestionChanged",
+            "printedName": "handlePendingQuestionChanged(ttsAutoSpeak:question:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC28handlePendingQuestionChanged12ttsAutoSpeak8questionySb_SSSgtF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC28handlePendingQuestionChanged12ttsAutoSpeak8questionySb_SSSgtF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleTtsSpeakingChanged",
+            "printedName": "handleTtsSpeakingChanged(onResumeMic:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AudioKit.MicTarget) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicTarget",
+                    "printedName": "AudioKit.MicTarget",
+                    "usr": "s:8AudioKit9MicTargetO"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC24handleTtsSpeakingChanged11onResumeMicyyAA0K6TargetOXE_tF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC24handleTtsSpeakingChanged11onResumeMicyyAA0K6TargetOXE_tF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAll",
+            "printedName": "stopAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8AudioKit014KontaktberichtA7ServiceC7stopAllyyF",
+            "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC7stopAllyyF",
+            "moduleName": "AudioKit",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8AudioKit014KontaktberichtA7ServiceC",
+        "mangledName": "$s8AudioKit014KontaktberichtA7ServiceC",
+        "moduleName": "AudioKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KontaktberichtAudioServiceProtocol",
+            "printedName": "KontaktberichtAudioServiceProtocol",
+            "usr": "s:8AudioKit014KontaktberichtA15ServiceProtocolP",
+            "mangledName": "$s8AudioKit014KontaktberichtA15ServiceProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioKit.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 437,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 501,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 567,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1824,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioSTT.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioSTT.swift",
+      "kind": "BooleanLiteral",
+      "offset": 301,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioSTT.swift",
+      "kind": "BooleanLiteral",
+      "offset": 347,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioSTT.swift",
+      "kind": "StringLiteral",
+      "offset": 643,
+      "length": 7,
+      "value": "\"de-DE\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioTTS.swift",
+      "kind": "BooleanLiteral",
+      "offset": 236,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioTTS.swift",
+      "kind": "FloatLiteral",
+      "offset": 741,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/AudioTTS.swift",
+      "kind": "FloatLiteral",
+      "offset": 777,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/KontaktberichtAudioService.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 7,
+      "value": "\"de-DE\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/kontaktbericht_swift_flutter\/AudioKit\/AudioKit\/KontaktberichtAudioService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1048,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

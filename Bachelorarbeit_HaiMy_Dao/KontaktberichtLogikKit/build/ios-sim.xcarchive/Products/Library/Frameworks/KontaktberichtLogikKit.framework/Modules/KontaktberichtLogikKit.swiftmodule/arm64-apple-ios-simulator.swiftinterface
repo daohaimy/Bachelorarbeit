@@ -1,0 +1,93 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios26.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KontaktberichtLogikKit
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import Combine
+import Darwin
+import Foundation
+import FoundationModels
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Ansprechpartner : Swift.Identifiable, Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public let id: Foundation.UUID
+  public let name: Swift.String
+  public init(id: Foundation.UUID = UUID(), name: Swift.String)
+  public static func == (a: KontaktberichtLogikKit.Ansprechpartner, b: KontaktberichtLogikKit.Ansprechpartner) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+final public class AnsprechpartnerDirectory {
+  @Combine.Published @_projectedValueProperty($contacts) final public var contacts: [KontaktberichtLogikKit.Ansprechpartner] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  final public var $contacts: Combine.Published<[KontaktberichtLogikKit.Ansprechpartner]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  @objc deinit
+}
+public enum Gespraechstyp : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Sendable {
+  case messegespraech, kundenbesuch, email, chance, telefon
+  public var displayName: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [KontaktberichtLogikKit.Gespraechstyp]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [KontaktberichtLogikKit.Gespraechstyp] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Kontaktbericht : Swift.Identifiable, Swift.Codable, Swift.Equatable, Swift.Sendable {
+  public var id: Foundation.UUID
+  public var ansprechpartner: Swift.String
+  public var date: Foundation.Date
+  public var typ: KontaktberichtLogikKit.Gespraechstyp
+  public var inhalt: Swift.String
+  public init(id: Foundation.UUID = UUID(), ansprechpartner: Swift.String, date: Foundation.Date = .now, typ: KontaktberichtLogikKit.Gespraechstyp, inhalt: Swift.String)
+  public static func == (a: KontaktberichtLogikKit.Kontaktbericht, b: KontaktberichtLogikKit.Kontaktbericht) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_free")
+public func kb_free(_ ptr: Swift.UnsafeMutablePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_extract_json")
+public func kb_extract_json(_ inputJson: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_answer_followup_json")
+public func kb_answer_followup_json(_ inputJson: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_save_json")
+public func kb_save_json(_ inputJson: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_list_json")
+public func kb_list_json() -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("kb_delete_json")
+public func kb_delete_json(_ inputJson: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafeMutablePointer<Swift.CChar>?
+#endif
+extension KontaktberichtLogikKit.Gespraechstyp : Swift.Equatable {}
+extension KontaktberichtLogikKit.Gespraechstyp : Swift.Hashable {}
+extension KontaktberichtLogikKit.Gespraechstyp : Swift.RawRepresentable {}
