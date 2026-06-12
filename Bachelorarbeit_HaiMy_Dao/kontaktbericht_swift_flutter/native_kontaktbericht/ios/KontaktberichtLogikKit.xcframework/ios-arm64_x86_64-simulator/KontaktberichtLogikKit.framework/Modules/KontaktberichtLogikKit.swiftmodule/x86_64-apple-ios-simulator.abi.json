@@ -1,0 +1,2396 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KontaktberichtLogikKit",
+    "printedName": "KontaktberichtLogikKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Ansprechpartner",
+        "printedName": "Ansprechpartner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV2id10Foundation4UUIDVvp",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV2id10Foundation4UUIDVvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV2id10Foundation4UUIDVvg",
+                "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV2id10Foundation4UUIDVvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV4nameSSvp",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV4nameSSvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV4nameSSvg",
+                "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV4nameSSvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Ansprechpartner",
+                "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4UUIDV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV2id4nameAC10Foundation4UUIDV_SStcfc",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV2id4nameAC10Foundation4UUIDV_SStcfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Ansprechpartner",
+                "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Ansprechpartner",
+                "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Ansprechpartner",
+                "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV2eeoiySbAC_ACtFZ",
+            "moduleName": "KontaktberichtLogikKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV",
+        "mangledName": "$s22KontaktberichtLogikKit15AnsprechpartnerV",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnsprechpartnerDirectory",
+        "printedName": "AnsprechpartnerDirectory",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contacts",
+            "printedName": "contacts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[KontaktberichtLogikKit.Ansprechpartner]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Ansprechpartner",
+                    "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                    "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvp",
+            "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KontaktberichtLogikKit.Ansprechpartner]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Ansprechpartner",
+                        "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                        "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvg",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KontaktberichtLogikKit.Ansprechpartner]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Ansprechpartner",
+                        "printedName": "KontaktberichtLogikKit.Ansprechpartner",
+                        "usr": "s:22KontaktberichtLogikKit15AnsprechpartnerV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvs",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvM",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC8contactsSayAA0D0VGvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$contacts",
+            "printedName": "$contacts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Array<KontaktberichtLogikKit.Ansprechpartner>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvp",
+            "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Array<KontaktberichtLogikKit.Ansprechpartner>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvg",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Array<KontaktberichtLogikKit.Ansprechpartner>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvs",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_Gvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_GvM",
+                "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC9$contacts7Combine9PublishedV9PublisherVySayAA0D0VG_GvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnsprechpartnerDirectory",
+                "printedName": "KontaktberichtLogikKit.AnsprechpartnerDirectory",
+                "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryCACycfc",
+            "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryCACycfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22KontaktberichtLogikKit24AnsprechpartnerDirectoryC",
+        "mangledName": "$s22KontaktberichtLogikKit24AnsprechpartnerDirectoryC",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Gespraechstyp",
+        "printedName": "Gespraechstyp",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "messegespraech",
+            "printedName": "messegespraech",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KontaktberichtLogikKit.Gespraechstyp.Type) -> KontaktberichtLogikKit.Gespraechstyp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO14messegespraechyA2CmF",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO14messegespraechyA2CmF",
+            "moduleName": "KontaktberichtLogikKit"
+          },
+          {
+            "kind": "Var",
+            "name": "kundenbesuch",
+            "printedName": "kundenbesuch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KontaktberichtLogikKit.Gespraechstyp.Type) -> KontaktberichtLogikKit.Gespraechstyp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO12kundenbesuchyA2CmF",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO12kundenbesuchyA2CmF",
+            "moduleName": "KontaktberichtLogikKit"
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KontaktberichtLogikKit.Gespraechstyp.Type) -> KontaktberichtLogikKit.Gespraechstyp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO5emailyA2CmF",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO5emailyA2CmF",
+            "moduleName": "KontaktberichtLogikKit"
+          },
+          {
+            "kind": "Var",
+            "name": "chance",
+            "printedName": "chance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KontaktberichtLogikKit.Gespraechstyp.Type) -> KontaktberichtLogikKit.Gespraechstyp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO6chanceyA2CmF",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO6chanceyA2CmF",
+            "moduleName": "KontaktberichtLogikKit"
+          },
+          {
+            "kind": "Var",
+            "name": "telefon",
+            "printedName": "telefon",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KontaktberichtLogikKit.Gespraechstyp.Type) -> KontaktberichtLogikKit.Gespraechstyp",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO7telefonyA2CmF",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO7telefonyA2CmF",
+            "moduleName": "KontaktberichtLogikKit"
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO11displayNameSSvp",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO11displayNameSSvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit13GespraechstypO11displayNameSSvg",
+                "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO11displayNameSSvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KontaktberichtLogikKit.Gespraechstyp?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO8rawValueACSgSS_tcfc",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO8rawValueACSgSS_tcfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO8rawValueSSvp",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO8rawValueSSvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit13GespraechstypO8rawValueSSvg",
+                "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO8rawValueSSvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[KontaktberichtLogikKit.Gespraechstyp]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit13GespraechstypO8allCasesSayACGvpZ",
+            "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO8allCasesSayACGvpZ",
+            "moduleName": "KontaktberichtLogikKit",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KontaktberichtLogikKit.Gespraechstyp]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit13GespraechstypO8allCasesSayACGvgZ",
+                "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO8allCasesSayACGvgZ",
+                "moduleName": "KontaktberichtLogikKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22KontaktberichtLogikKit13GespraechstypO",
+        "mangledName": "$s22KontaktberichtLogikKit13GespraechstypO",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KontaktberichtLogikKit.Gespraechstyp]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Gespraechstyp",
+                        "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                        "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Kontaktbericht",
+        "printedName": "Kontaktbericht",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvp",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvg",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvs",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvM",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V2id10Foundation4UUIDVvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ansprechpartner",
+            "printedName": "ansprechpartner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit0A0V15ansprechpartnerSSvp",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V15ansprechpartnerSSvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V15ansprechpartnerSSvg",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V15ansprechpartnerSSvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V15ansprechpartnerSSvs",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V15ansprechpartnerSSvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V15ansprechpartnerSSvM",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V15ansprechpartnerSSvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "date",
+            "printedName": "date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit0A0V4date10Foundation4DateVvp",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V4date10Foundation4DateVvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V4date10Foundation4DateVvg",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V4date10Foundation4DateVvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V4date10Foundation4DateVvs",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V4date10Foundation4DateVvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V4date10Foundation4DateVvM",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V4date10Foundation4DateVvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "typ",
+            "printedName": "typ",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Gespraechstyp",
+                "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvp",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvg",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Gespraechstyp",
+                    "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                    "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvs",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvM",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V3typAA13GespraechstypOvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "inhalt",
+            "printedName": "inhalt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22KontaktberichtLogikKit0A0V6inhaltSSvp",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V6inhaltSSvp",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V6inhaltSSvg",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V6inhaltSSvg",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V6inhaltSSvs",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V6inhaltSSvs",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22KontaktberichtLogikKit0A0V6inhaltSSvM",
+                "mangledName": "$s22KontaktberichtLogikKit0A0V6inhaltSSvM",
+                "moduleName": "KontaktberichtLogikKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:ansprechpartner:date:typ:inhalt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Kontaktbericht",
+                "printedName": "KontaktberichtLogikKit.Kontaktbericht",
+                "usr": "s:22KontaktberichtLogikKit0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4UUIDV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Gespraechstyp",
+                "printedName": "KontaktberichtLogikKit.Gespraechstyp",
+                "usr": "s:22KontaktberichtLogikKit13GespraechstypO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit0A0V2id15ansprechpartner4date3typ6inhaltAC10Foundation4UUIDV_SSAI4DateVAA13GespraechstypOSStcfc",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V2id15ansprechpartner4date3typ6inhaltAC10Foundation4UUIDV_SSAI4DateVAA13GespraechstypOSStcfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Kontaktbericht",
+                "printedName": "KontaktberichtLogikKit.Kontaktbericht",
+                "usr": "s:22KontaktberichtLogikKit0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KontaktberichtLogikKit0A0V4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KontaktberichtLogikKit0A0V6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V6encode2toys7Encoder_p_tKF",
+            "moduleName": "KontaktberichtLogikKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Kontaktbericht",
+                "printedName": "KontaktberichtLogikKit.Kontaktbericht",
+                "usr": "s:22KontaktberichtLogikKit0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Kontaktbericht",
+                "printedName": "KontaktberichtLogikKit.Kontaktbericht",
+                "usr": "s:22KontaktberichtLogikKit0A0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22KontaktberichtLogikKit0A0V2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22KontaktberichtLogikKit0A0V2eeoiySbAC_ACtFZ",
+            "moduleName": "KontaktberichtLogikKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22KontaktberichtLogikKit0A0V",
+        "mangledName": "$s22KontaktberichtLogikKit0A0V",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FoundationModels",
+        "printedName": "FoundationModels",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "KontaktberichtLogikKit"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_free",
+        "printedName": "kb_free(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_free:",
+        "mangledName": "$s22KontaktberichtLogikKit7kb_freeyySpys4Int8VGSgF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_extract_json",
+        "printedName": "kb_extract_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_extract_json:",
+        "mangledName": "$s22KontaktberichtLogikKit15kb_extract_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_answer_followup_json",
+        "printedName": "kb_answer_followup_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_answer_followup_json:",
+        "mangledName": "$s22KontaktberichtLogikKit23kb_answer_followup_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_save_json",
+        "printedName": "kb_save_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_save_json:",
+        "mangledName": "$s22KontaktberichtLogikKit12kb_save_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_list_json",
+        "printedName": "kb_list_json()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_list_json",
+        "mangledName": "$s22KontaktberichtLogikKit12kb_list_jsonSpys4Int8VGSgyF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "kb_delete_json",
+        "printedName": "kb_delete_json(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)kb_delete_json:",
+        "mangledName": "$s22KontaktberichtLogikKit14kb_delete_jsonySpys4Int8VGSgSPyADGSgF",
+        "moduleName": "KontaktberichtLogikKit",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 534,
+      "length": 14,
+      "value": "\"Anna Müller\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 17,
+      "value": "\"Henri Schneider\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 15,
+      "value": "\"Jonas Schmidt\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 16,
+      "value": "\"Max Mustermann\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 728,
+      "length": 13,
+      "value": "\"Tim Kröger\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/Ansprechpartner.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 15,
+      "value": "\"Peter Müller\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/KontaktberichtStore.swift",
+      "kind": "Array",
+      "offset": 232,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Models\/KontaktberichtStore.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 22,
+      "value": "\"kontaktberichte.json\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "StringLiteral",
+      "offset": 1028,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "StringLiteral",
+      "offset": 1105,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "StringLiteral",
+      "offset": 1132,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "Array",
+      "offset": 1237,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "Array",
+      "offset": 1322,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1366,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Services\/KontaktberichtLLMService.swift",
+      "kind": "StringLiteral",
+      "offset": 1467,
+      "length": 374,
+      "value": "\"Rolle & Ziel: Du extrahierst Felder eines Kontaktberichts aus deutschem Freitext.\nAntworte ausschließlich per Tool-Aufruf (kein Fließtext).\n\nGesprächsinhalt: die Inhalt in einem kurzen Satz zusammenfassen. Falls es keine Inhalt im Text gibt, dann einfach leer lassen.\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/BerichtTool.swift",
+      "kind": "StringLiteral",
+      "offset": 183,
+      "length": 23,
+      "value": "\"create_kontaktbericht\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/BerichtTool.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 44,
+      "value": "\"Erzeuge einen Kontaktbericht aus Freitext.\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/LastBerichtTool.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 28,
+      "value": "\"kontaktbericht_list_action\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/LastBerichtTool.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 96,
+      "value": "\"Führe eine Aktion auf der Kontaktberichtliste aus, z. B. den letzten Kontaktbericht anzeigen.\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/NeedClarificationTool.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 20,
+      "value": "\"need_clarification\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/Supports\/Tools\/NeedClarificationTool.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 52,
+      "value": "\"Stellt eine Rückfrage, wenn Pflichtfelder fehlen.\""
+    },
+    {
+      "filePath": "\/Users\/hd\/Documents\/bachelorarbeit-hai-my-dao-offline-ki\/KontaktberichtLogikKit\/KontaktberichtLogikKit\/KontaktberichtLogikKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3599,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
